@@ -12,5 +12,8 @@ module.exports = defineConfig({
         }
       }
     }
-  }
+  },
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/fengxing-10.github.io/'
+    : '/'
 })
